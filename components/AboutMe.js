@@ -148,8 +148,8 @@ export default function AboutMe() {
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
-                src="https://freepikpsd.com/file/2019/10/css3-logo-png-9-Transparent-Images.png"
-                className="h-20 w-20 mx-4 my-4"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+                className="h-20 w-15 mx-4 my-4"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
