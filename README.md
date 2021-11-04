@@ -1,8 +1,6 @@
-## Portfolio Website For Full-Stack Developers 💯
+## Richie Gene Tan's Portfolio Website for Full-Stack Developers
 
-Portfolio for developers is a simple and minimalistic website to showcase your skills and projects as a developer. The design is inspired by [Kevin Clark](https://kevinclark.ca). The website is completely Open Source, you can use it for whatever purpose you want.
-
-![HomeGif](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/websitegif.gif)
+Portfolio Website for Full-Stack Developers for simple and minimalistic website to showcase your skills and projects as a developer. The design is inspired by [Kevin Clark](https://kevinclark.ca). This website is completely Open Source, you can use it for whatever purpose you want.
 
 # Features
 
@@ -14,27 +12,27 @@ Portfolio for developers is a simple and minimalistic website to showcase your s
 
 # Pages
 
-I've kept the pages as simple as possible. Only the required sections are included with minimal content.
+- Here are the pages that Richie Gene Tan has created for this website:
 
 ## Landing
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/home.png)
+![Hompage](https://github.com/richiichips/richiegenetan-portfoliowebsite/blob/main/demo-website/Homepage.jpeg)
 
 ## About
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/about.png)
+![Hompage](https://github.com/richiichips/richiegenetan-portfoliowebsite/blob/main/demo-website/About Me.jpeg)
 
 ## Projects
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/projects.png)
+![Hompage](https://github.com/richiichips/richiegenetan-portfoliowebsite/blob/main/demo-website/Projects.jpeg)
 
 ## Experience
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/experience.png)
+![Hompage](https://github.com/richiichips/richiegenetan-portfoliowebsite/blob/main/demo-website/Experience.jpeg)
 
 ## Contact
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/contact.png)
+![Hompage](https://github.com/richiichips/richiegenetan-portfoliowebsite/blob/main/demo-website/Contact.jpeg)
 
 # Tech Stack
 
