@@ -20,7 +20,7 @@ Portfolio Website for Full-Stack Developers for simple and minimalistic website 
 
 ## About
 
-![Hompage](https://github.com/richiichips/richiegenetan-portfoliowebsite/blob/main/demo-website/About Me.jpeg)
+![Hompage](https://github.com/richiichips/richiegenetan-portfoliowebsite/blob/main/demo-website/AboutMe.jpeg)
 
 ## Projects
 
