@@ -40,7 +40,7 @@ export default function FavouriteProjects() {
           >
             <div className="relative overflow-hidden">
               <img
-                src="/HIVE+ Project.jpg"
+                src="/HIVE+Project.jpg"
                 alt="Client from HIVE+ Virtual Events Hub"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
@@ -60,7 +60,7 @@ export default function FavouriteProjects() {
             <div className="relative overflow-hidden">
               {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
               <img
-                src="/ESPCityOfEnergia Project.jpg"
+                src="/ESPCityOfEnergiaProject.jpg"
                 alt="Client from ESP - City of Energia"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
@@ -80,7 +80,7 @@ export default function FavouriteProjects() {
             <div className="relative overflow-hidden shadow-2xl">
               {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
               <img
-                src="/ONE SHOGUN Project.jpg"
+                src="/ONE SHOGUNProject.jpg"
                 alt="Client from ONE SHOGUN"
                 className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
               />

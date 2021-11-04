@@ -10,17 +10,17 @@ const userData = {
     {
       title: "HIVE+ Virtual Events Hub Content Management System (CMS)",
       link: "https://thehivebyvircon.herokuapp.com",
-      imgUrl: "/HIVE+ Project.jpg",
+      imgUrl: "/HIVE+Project.jpg",
     },
     {
       title: "ESP - City of Energia Content Management System (CMS)",
       link: "https://espadminapp.herokuapp.com",
-      imgUrl: "/ESPCityOfEnergia Project.jpg",
+      imgUrl: "/ESPCityOfEnergiaProject.jpg",
     },
     {
       title: "ONE Shogun Content Management System (CMS)",
       link: "https://oneshogun.herokuapp.com",
-      imgUrl: "/ONE SHOGUN Project.jpg",
+      imgUrl: "/ONE SHOGUNProject.jpg",
     },
   ],
   about: {
