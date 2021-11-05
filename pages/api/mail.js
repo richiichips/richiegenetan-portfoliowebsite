@@ -5,7 +5,7 @@ mail.setApiKey(process.env.SENDGRID_API_KEY);
 export default async (req, res) => {
   const body = JSON.parse(req.body);
 
- console.log(req.body);
+  console.log('body'.body);
 
   const message = `
     Name: ${body.name}\r\n
@@ -16,7 +16,7 @@ export default async (req, res) => {
   await mail.send({
     to: 'to.name@email.com',
     from: 'from.name@email.com',
-    subject: 'Message from a User!',
+    subject: 'Message from a User! (richiegenetan.com)',
     text: message,
     html: message.replace(/\r\n/g, '<br>'),
   });
