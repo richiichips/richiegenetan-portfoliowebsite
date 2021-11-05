@@ -6,7 +6,7 @@ export default async (req, res) => {
   const body = JSON.parse(req.body);
 
  console.log(req.body);
-  
+
   const message = `
     Name: ${body.name}\r\n
     Email: ${body.email}\r\n
@@ -21,5 +21,5 @@ export default async (req, res) => {
     html: message.replace(/\r\n/g, '<br>'),
   });
 
-  res.status(200).json({ status: 'Ok' });
+  res.status(200).json({ status: 'Message Sent!' });
 }
