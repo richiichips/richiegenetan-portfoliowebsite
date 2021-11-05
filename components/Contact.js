@@ -35,7 +35,7 @@ export default function Contact() {
               </h1>
               <p className="font-light text-base text-gray-200 mt-2">
                 Fill in the details and I'll get back to you as soon as I can. (NOTE: The form is not working as of this moment.) Please refer to my contact details.
-              </p>
+              </p> 
             </header>
             <div className="icons-container inline-flex flex-col my-20">
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
