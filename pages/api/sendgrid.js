@@ -15,7 +15,7 @@ async function sendEmail(req, res) {
       
         <title>Richie Gene Tan - Email Message</title>
         <meta name="description" content="Richie Gene Tan - Email Message ">
-        <meta name="author" content="SitePoint">
+        <meta name="author" content="Richie Gene Tan - Full-Stack Developer">
       <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
       
         <link rel="stylesheet" href="css/styles.css?v=1.0">
