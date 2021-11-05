@@ -21,5 +21,5 @@ export default async (req, res) => {
     html: message.replace(/\r\n/g, '<br>'),
   });
 
-  res.status(200).json({ status: 'Message Sent!' });
+  res.status(200).json({ status: 'Message Sent Successfully!' });
 }
