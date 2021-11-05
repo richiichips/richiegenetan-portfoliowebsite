@@ -3,15 +3,16 @@ import userData from "@constants/data";
 
 export default function Contact() {
   // States for contact form fields
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
   // Form validation state
   const [errors, setErrors] = useState({});
 
   //   Setting button text on form submission
-  const [buttonText, setButtonText] = useState("Send");
+  const [buttonText, setButtonText] = useState("Send Message");
 
   // Setting success or failure messages states
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -28,6 +29,10 @@ export default function Contact() {
     }
     if (email.length <= 0) {
       tempErrors["email"] = true;
+      isValid = false;
+    }
+    if (subject.length <= 0) {
+      tempErrors["subject"] = true;
       isValid = false;
     }
     if (message.length <= 0) {
@@ -51,14 +56,15 @@ export default function Contact() {
       setButtonText("Sending");
       const res = await fetch("/api/mail", {
         body: JSON.stringify({
-          email: email,
           name: name,
+          email: email,
+          subject: subject,
           message: message,
         }),
         headers: {
           "Content-Type": "application/json",
         },
-        method: "POST",
+        method: 'POST',
       });
 
       const { error } = await res.json();
@@ -66,14 +72,25 @@ export default function Contact() {
         console.log(error);
         setShowSuccessMessage(false);
         setShowFailureMessage(true);
-        setButtonText("Send");
+        setButtonText("Send Message");
+
+        // Reset form fields
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
         return;
       }
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
-      setButtonText("Send");
+      setButtonText("Send Message");
+      // Reset form fields
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
     }
-    console.log(fullname, email, subject, message);
+    console.log(name, email, subject, message);
   };
   
   return (
@@ -217,7 +234,6 @@ export default function Contact() {
           </div>
           <form onSubmit={handleOnSubmit} className="form rounded-lg bg-white p-4 flex flex-col">
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
-              {" "}
               Your Name
             </label>
             <input
@@ -227,16 +243,35 @@ export default function Contact() {
               onChange={(e) => setName(e.target.value)}
               name="name"
             />
+            {errors?.name && (
+            <p className="text-red-500">Name cannot be empty.</p>
+            )}
             <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
               Email
             </label>
             <input
-              type="text"
+              type="email"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               name="email"
             />
+             {errors?.email && (
+            <p className="text-red-500">Email cannot be empty.</p>
+            )}
+            <label htmlFor="subject" className="text-sm text-gray-600 mx-4 mt-4">
+              Subject
+            </label>
+            <input
+              type="subject"
+              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              name="subject"
+            />
+             {errors?.subject && (
+            <p className="text-red-500">Subject cannot be empty.</p>
+            )}
             <label
               htmlFor="message"
               className="text-sm text-gray-600 mx-4 mt-4"
@@ -251,12 +286,28 @@ export default function Contact() {
               onChange={(e) => setMessage(e.target.value)}
               name="message"
             ></textarea>
+            {errors?.message && (
+            <p className="text-red-500">Message body cannot be empty.</p>
+            )}
             <button
               type="submit"
               className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
             >
-              Send Message
+              {buttonText}
             </button>
+            <br />
+            <div className="text-left">
+            {showSuccessMessage && (
+              <p className="text-green-500 font-semibold text-sm my-2">
+                Thank You! Your message has been delivered.
+              </p>
+            )}
+            {showFailureMessage && (
+              <p className="text-red-500">
+                Oops! Something went wrong, please try again.
+              </p>
+            )}
+          </div>
           </form>
         </div>
       </div>

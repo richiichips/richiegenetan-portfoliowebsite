@@ -13,8 +13,8 @@ async function sendEmail(req, res) {
       <head>
         <meta charset="utf-8">
       
-        <title>The HTML5 Herald</title>
-        <meta name="description" content="The HTML5 Herald">
+        <title>Richie Gene Tan - Email Message</title>
+        <meta name="description" content="Richie Gene Tan - Email Message ">
         <meta name="author" content="SitePoint">
       <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
       
@@ -26,7 +26,7 @@ async function sendEmail(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">              
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>You've got a new mail from ${req.body.fullname}, their email is: ✉️${req.body.email} </h3>
+              <h3>You've got a new mail from ${req.body.name}, their email is: ✉️${req.body.email} </h3>
               <div style="font-size: 16px;">
               <p>Message:</p>
               <p>${req.body.message}</p>
