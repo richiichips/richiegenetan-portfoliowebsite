@@ -1,23 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
 import userData from "@constants/data";
 
 export default function Contact() {
+  // States for contact form fields
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  async function handleOnSubmit(e) {
+  // Form validation state
+  const [errors, setErrors] = useState({});
+
+  //   Setting button text on form submission
+  const [buttonText, setButtonText] = useState("Send");
+
+  // Setting success or failure messages states
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showFailureMessage, setShowFailureMessage] = useState(false);
+
+  // Validation check method
+  const handleValidation = () => {
+    let tempErrors = {};
+    let isValid = true;
+
+    if (name.length <= 0) {
+      tempErrors["name"] = true;
+      isValid = false;
+    }
+    if (email.length <= 0) {
+      tempErrors["email"] = true;
+      isValid = false;
+    }
+    if (message.length <= 0) {
+      tempErrors["message"] = true;
+      isValid = false;
+    }
+
+    setErrors({ ...tempErrors });
+    console.log("errors", errors);
+    return isValid;
+  };
+
+  //   Handling form submit
+
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = {};
+    let isValidForm = handleValidation();
 
-    Array.from(e.currentTarget.elements).forEach(field => {
-      if ( !field.name ) return;
-      formData[field.name] = field.value;
-    });
+    if (isValidForm) {
+      setButtonText("Sending");
+      const res = await fetch("/api/mail", {
+        body: JSON.stringify({
+          email: email,
+          name: name,
+          message: message,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
 
-    await fetch('/api/mail', {
-      method: 'POST',
-      body: JSON.stringify(formData)
-    });
-  }
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        setShowSuccessMessage(false);
+        setShowFailureMessage(true);
+        setButtonText("Send");
+        return;
+      }
+      setShowSuccessMessage(true);
+      setShowFailureMessage(false);
+      setButtonText("Send");
+    }
+    console.log(fullname, email, subject, message);
+  };
   
   return (
     <section>
@@ -34,7 +91,7 @@ export default function Contact() {
                 Get in touch with me, let's talk.
               </h1>
               <p className="font-light text-base text-gray-200 mt-2">
-                NOTE: The form is not working as of this moment. Please refer to my contact details.
+                Fill up the form below and I'll get back to you as soon as possible.
               </p> 
             </header>
             <div className="icons-container inline-flex flex-col my-20">
@@ -158,7 +215,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <form className="form rounded-lg bg-white p-4 flex flex-col" onSubmit={handleOnSubmit}>
+          <form onSubmit={handleOnSubmit} className="form rounded-lg bg-white p-4 flex flex-col">
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
               {" "}
               Your Name
@@ -166,6 +223,8 @@ export default function Contact() {
             <input
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               name="name"
             />
             <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
@@ -174,6 +233,8 @@ export default function Contact() {
             <input
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               name="email"
             />
             <label
@@ -186,6 +247,8 @@ export default function Contact() {
               rows="4"
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               name="message"
             ></textarea>
             <button
