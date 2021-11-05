@@ -44,7 +44,7 @@ The website is built in my favourite Tech Stack and deployed on [Vercel](https:/
 - [tailwindcss](https://tailwindcss.com) for styling.
 - [React Rough Notation](https://roughnotation.com) for Hero section highlighting.
 - [Vercel](https://vercel.com) for deployments and CI/CD.
-- [SendGrid API](https://sendgrid.com/solutions/email-api/) for sending a message through email using email requests.
+- [SendGrid API](https://sendgrid.com/solutions/email-api/) for sending messages through email using email requests.
 
 # Usage
 
