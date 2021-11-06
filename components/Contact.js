@@ -12,7 +12,7 @@ export default function Contact() {
   const [errors, setErrors] = useState({});
 
   //   Setting button text on form submission
-  const [buttonText, setButtonText] = useState("Send Message");
+  const [buttonText, setButtonText] = useState("Send");
 
   // Setting success or failure messages states
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -66,7 +66,7 @@ export default function Contact() {
         },
         method: "POST",
       });
-      
+
       const { error } = await res.json();
       if (error) {
         console.log(error);
