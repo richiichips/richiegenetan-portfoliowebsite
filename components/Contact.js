@@ -243,7 +243,7 @@ export default function Contact() {
           </div>
           <form onSubmit={handleOnSubmit} className="form rounded-lg bg-white p-4 flex flex-col">
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
-              Your Name
+              Your Name<span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -256,7 +256,7 @@ export default function Contact() {
             <p className="text-red-500">Name cannot be empty.</p>
             )}
             <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
-              Email
+              Email<span className="text-red-500">*</span>
             </label>
             <input
               type="email"
@@ -269,7 +269,7 @@ export default function Contact() {
             <p className="text-red-500">Email cannot be empty.</p>
             )}
             <label htmlFor="subject" className="text-sm text-gray-600 mx-4 mt-4">
-              Subject
+              Subject<span className="text-red-500">*</span>
             </label>
             <input
               type="subject"
@@ -285,7 +285,7 @@ export default function Contact() {
               htmlFor="message"
               className="text-sm text-gray-600 mx-4 mt-4"
             >
-              Message
+              Message<span className="text-red-500">*</span>
             </label>
             <textarea
               rows="4"
