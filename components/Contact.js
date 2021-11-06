@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import userData from "@constants/data";
 
+
 export default function Contact() {
   // States for contact form fields
   const [email, setEmail] = useState("");
@@ -54,6 +55,14 @@ export default function Contact() {
 
     if (isValidForm) {
       setButtonText("Sending");
+      // const res = await sendEmail({
+      //   body:JSON.stringify({
+      //         name: name,
+      //         email: email,
+      //         subject: subject,
+      //         message: message,
+      //   }),
+      // });
       const res = await fetch("/api/sendgrid",  {
         body: JSON.stringify({
           name: name,

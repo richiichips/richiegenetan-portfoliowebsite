@@ -6,7 +6,7 @@ async function sendEmail(req, res) {
   try {
     await sendgrid.send({
       to: "richiegenetan14@gmail.com", // Your email where you'll receive emails
-      from: "richiegenetan14@gmail.com", // your website email address here
+      from: "hello@richiegenetan.com", // your website email address here
       subject: `[Lead from Richie Gene Tan's Portfolio Website] : ${req.body.subject}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
@@ -47,7 +47,7 @@ async function sendEmail(req, res) {
       </html>`,
     });
   } catch (error) {
-    // console.log(error);
+    console.log("SendGrid Error", error);
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
 
