@@ -9,7 +9,7 @@ const userData = {
   projects: [
     {
       title: "HIVE+ Virtual Events Hub Content Management System (CMS)",
-      link: "https://thehivebyvircon.herokuapp.com",
+      link: "https://hiveplusadmin.livehive.ph",
       imgUrl: "/HIVE+Project.jpg",
     },
     {
