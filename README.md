@@ -2,7 +2,7 @@
 
 Portfolio Website for Full-Stack Developers for simple and minimalistic website to showcase your skills and projects as a developer. The design is inspired by [Kevin Clark](https://kevinclark.ca). This website is completely Open Source, you can use it for whatever purpose you want.
 
-![HomeGif](https://github.com/richiichips/richiegenetan-portfoliowebsite/blob/main/demo-website/demowebsite.gif)
+<!-- ![HomeGif](https://github.com/richiichips/richiegenetan-portfoliowebsite/blob/main/demo-website/demowebsite.gif) -->
 
 # Features
 
