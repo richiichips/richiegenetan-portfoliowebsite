@@ -220,7 +220,7 @@ export default function AboutMe() {
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
-                src="https://symbols.getvecta.com/stencil_261/16_google-firebase.837bf51097.png"
+                src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg"
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
@@ -278,7 +278,7 @@ export default function AboutMe() {
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
-                src="https://cadcreations.co.ke/wp-content/uploads/Adobe_Illustrator_CC_icon1200px.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1024px-Adobe_Illustrator_CC_icon.svg.png"
                 className="h-20 w-20 mx-4 my-4"
               />
               <img

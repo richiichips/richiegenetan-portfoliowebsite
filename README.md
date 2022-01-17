@@ -12,7 +12,7 @@ Portfolio Website for Full-Stack Developers for simple and minimalistic website 
 - Exact sections that a developer needs to showcase their skills.
 - Clear call to actions.
 
-# Pages
+<!-- # Pages
 
 - Here are the pages that Richie Gene Tan has created for this website:
 
@@ -36,7 +36,7 @@ Portfolio Website for Full-Stack Developers for simple and minimalistic website 
 
 ![Hompage](https://github.com/richiichips/richiegenetan-portfoliowebsite/blob/main/demo-website/Contact.jpeg)
 
-# Tech Stack
+# Tech Stack -->
 
 The website is built in my favourite Tech Stack and deployed on [Vercel](https://vercel.com)
 

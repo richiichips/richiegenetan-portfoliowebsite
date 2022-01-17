@@ -22,6 +22,11 @@ const userData = {
       link: "https://oneshogun.herokuapp.com",
       imgUrl: "/ONE SHOGUNProject.jpg",
     },
+    {
+      title: "Taktyl Studios Official Website",
+      link: "https://taktylstudios.com",
+      imgUrl: "/TaktylStudiosWebsiteProject.jpg",
+    },
   ],
   about: {
     title:
