@@ -216,7 +216,7 @@ export default function AboutMe() {
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
-                src="https://d2zv2ciw0ln4h1.cloudfront.net/uploads/hp-logo-hero_c94026101f.svg"
+                src="https://opencollective-production.s3.us-west-1.amazonaws.com/e183fa70-7b5d-11eb-825b-978575575aa4.png"
                 className="h-20 w-20 mx-4 my-4"
               />
               <img

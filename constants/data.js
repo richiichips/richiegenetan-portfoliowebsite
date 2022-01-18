@@ -35,7 +35,7 @@ const userData = {
       `My knowledge in developing tools and technologies are: `,
       `HTML5, CSS3, JavaScript, PHP, Laravel, React, Next.js, Angular.js, Vue.js, Git, GitHub, C++ C#, Node.js, Bootstrap, Java, Python, Framer Motion, and Chakra UI.`,
       `Database and CMS tools are: `,
-      `MySQL, PostgreSQL, Strapi, and Firebase.`,
+      `MySQL, PostgreSQL, and Firebase.`,
     ],
     currentProject: "The Design and Implementation of Critique Hall: A Discussion Forum Web Application for Students",
     currentProjectUrl: "",
