@@ -39,7 +39,7 @@ async function sendEmail(req, res) {
                 <a href="https://github.com/richiichips/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">GitHub</a>
                 <a href="https://instagram.com/richiichips/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Instagram</a>
                 <a href="https://linkedin.com/in/richstartan/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">LinkedIn</a>
-                <a href="https://twitter.com/mannupaaji/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Twitter</a>
+                <a href="https://twitter.com/richiechips14/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Twitter</a>
                 
               </div>
               </div>
