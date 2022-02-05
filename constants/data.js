@@ -38,7 +38,7 @@ const userData = {
       `MySQL, PostgreSQL, and Firebase.`,
     ],
     currentProject: "The Design and Implementation of Critique Hall: A Discussion Forum Web Application for Students",
-    currentProjectUrl: "",
+    currentProjectUrl: "https://critiquehall.vercel.app",
   },
   experience: [
     {
