@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   const handleRouteChange = (url) => {
-    window.gtag('config', '[Tracking ID]', {
+    window.gtag('config', 'G-7RYT3TBJ9Z', {
       page_path: url,
     });
   };
@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
   }, [router.events]);
-  
+
   return (
     <ThemeProvider defaultTheme="light" attribute="class">
       <Component {...pageProps} />

@@ -1,6 +1,6 @@
-import { Head } from 'next/document';
+import NextDocument, { Head } from 'next/document';
 
-export default class MyDocument extends Document {
+export default class MyDocument extends NextDocument {
   render() {
     return (
       // ...
