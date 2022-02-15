@@ -1,9 +1,10 @@
-import NextDocument, { Head } from 'next/document';
+import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends NextDocument {
   render() {
     return (
       // ...
+      <Html lang='en'>
       <Head>
         <script
           async
@@ -21,6 +22,11 @@ export default class MyDocument extends NextDocument {
           }}
         />
       </Head>
+      <body>
+      <Main />
+      <NextScript />
+      </body>
+      </Html>
     );
   }
 }
