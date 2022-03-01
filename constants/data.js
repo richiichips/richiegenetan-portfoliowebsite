@@ -27,6 +27,16 @@ const userData = {
       link: "https://taktylstudios.com",
       imgUrl: "/TaktylStudiosWebsiteProject.jpg",
     },
+    {
+      title: "Critique Hall",
+      link: "https://critiquehall.vercel.app",
+      imgUrl: "/EmailBG.jpg",
+    },
+    {
+      title: "Silicon Valley HQ NFT Landing Page",
+      link: "https://siliconvalleyhq-nft.vercel.app",
+      imgUrl: "/SVHQProject2.png",
+    },
   ],
   about: {
     title:
@@ -44,14 +54,14 @@ const userData = {
     {
       title: "Web Developer Intern",
       company: "Taktyl Studios",
-      year: "2021",
+      year: "August 2021 - March 2022",
       companyLink: "https://taktylstudios.com",
       desc: "My roles and responsibilities include:  Write well designed, testable, efficient code by using best software development practices, Write efficient codes using PHP and Laravel,  Create website layout/user interface by using standard HTML/CSS practices, Integrating data from various back-end services and databases, Creating and maintaining software documentation, Keep up to date into emerging technologies/industry trends and apply them into operations and activities, Collaborates with web designers, developers, and Attend weekly meetings with teams from different departments.",
     },
     {
       title: "IT Assistant and Web Developer Intern",
       company: "YMAGE Trading and Construction Corporation",
-      year: "2018",
+      year: "April 2018 - April 2018",
       companyLink: "https://taktylstudios.com",
       desc: "I temporarily work here as an I.T Assistant and Web Developer Intern assigned at the Marketing Department in this company for one week required for my iACADEMY SHS Career Immersion last April 2018.",
     },

@@ -6,6 +6,7 @@ import LatestCode from "../components/LatestCode";
 import Hero from "../components/Hero";
 import getLatestRepos from "@lib/getLatestRepos";
 import userData from "@constants/data";
+import ScrollToTop from "react-scroll-to-top";
 
 export default function Home({ repositories }) {
   return (
@@ -13,6 +14,7 @@ export default function Home({ repositories }) {
     title="Richie Gene Tan  - Full-Stack Developer"
     description="Your average Full-Stack Developer in this ever changing industry."
     >
+      <ScrollToTop smooth width="40"/>
       <Hero />
       <FavouriteProjects />
       <LatestCode repositories={repositories} />

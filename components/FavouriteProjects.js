@@ -35,17 +35,17 @@ export default function FavouriteProjects() {
         <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
           {/* Single card */}
           <a
-            href="https://hiveplusadmin.livehive.ph"
+            href="https://critiquehall.vercel.app"
             className="w-full block col-span-3 shadow-2xl"
           >
             <div className="relative overflow-hidden">
               <img
-                src="/HIVE+Project.jpg"
-                alt="Client from HIVE+ Virtual Events Hub"
+                src="/EmailBG.jpg"
+                alt="Critique Hall Official Website"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                HIVE+ Virtual Events Hub Content Management System (CMS)
+                Critique Hall
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 01
@@ -54,61 +54,21 @@ export default function FavouriteProjects() {
           </a>
           {/* Single card */}
           <a
-            href="https://espadminapp.herokuapp.com"
+            href="https://siliconvalleyhq-nft.vercel.app"
             className="w-full block col-span-3  sm:col-span-2 shadow-2xl"
           >
             <div className="relative overflow-hidden">
               {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
               <img
-                src="/ESPCityOfEnergiaProject.jpg"
-                alt="Client from ESP - City of Energia"
+                src="/SVHQProject2.png"
+                alt="Client from Silicon Valley HQ"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                ESP - City of Energia Content Management System (CMS)
+                Silicon Valley HQ NFT Landing Page
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 02
-              </h1>
-            </div>
-          </a>
-          {/* Single card */}
-          <a
-            href="https://oneshogun.herokuapp.com"
-            className="w-full block col-span-3 sm:col-span-1  object-cover"
-          >
-            <div className="relative overflow-hidden shadow-2xl">
-              {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
-              <img
-                src="/ONE SHOGUNProject.jpg"
-                alt="Client from ONE SHOGUN"
-                className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
-              />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                ONE SHOGUN Content Management System (CMS)
-              </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                03
-              </h1>
-            </div>
-          </a>
-          {/* Single card */}
-          <a
-            href="https://taktylstudios.com"
-            className="w-full block col-span-3 sm:col-span-1  object-cover"
-          >
-            <div className="relative overflow-hidden shadow-2xl">
-              {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
-              <img
-                src="/TaktylStudiosWebsiteProject.jpg"
-                alt="Taktyl Studios Website"
-                className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
-              />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Taktyl Studios Official Website
-              </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                04
               </h1>
             </div>
           </a>
